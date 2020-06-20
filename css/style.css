@@ -26,10 +26,10 @@ Table of Content:
 06/ feature
 07/ button
 08/ service
-09/ testimonials 
-10/ blog 
-11/ contact 
-12/ footer 
+09/ testimonials
+10/ blog
+11/ contact
+12/ footer
 =====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
@@ -765,53 +765,61 @@ i:before {
 
 /* End Team People Area css
 ============================================================================================ */
+
+/* misvis area css
+ */
+
+
+.misvis_area {
+  margin: auto;
+}
+
+.misvis_text_inner {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*join team css
+ */
+.jointeam_area{
+  margin: auto;
+}
+.jointeam_text_inner{
+  text-align: center;
+}
+.jointeam_text_inner p {
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #7c8d93;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
 /* Challange Area css
 ============================================================================================ */
 .challange_area {
-  overflow: hidden;
+  margin: auto;
 }
 
 .challange_text_inner {
-  max-width: ;
   text-align: center;
 }
 
 .challange_text_inner p {
   font-size: 15px;
   line-height: 28px;
+  text-align: center;
   color: #7c8d93;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  padding-right: 25px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
-.challange_text_inner .c_video {
-  padding-top: 35px;
-}
-
-.challange_text_inner .c_video a {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: #0b1033;
-}
-
-.challange_text_inner .c_video a img {
-  padding-right: 15px;
-}
-
-.challange_img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.challange_img .challange_img_inner {
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4);
-}
 
 /* End Challange Area css
 ============================================================================================ */
@@ -2425,6 +2433,51 @@ i:before {
 .footer_copyright .float-sm-right ul li:hover a {
   color: #fff;
 }
+
+
+/* Jointeam Area css
+============================================================================================ */
+.jointeam_area {
+  overflow: hidden;
+  text-align: center;
+}
+
+.jointeam_text_inner {
+  max-width: 90%;
+  text-align: center;
+}
+.jointeam_text_inner {
+  max-width: 90%;
+  text-align: center;
+}
+
+.jointeam_text_inner p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #7c8d93;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-right: 25px;
+}
+
+.jointeam_text_inner .c_video {
+  padding-top: 35px;
+}
+
+.jointeam_text_inner .c_video a {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #0b1033;
+}
+
+.jointeam_text_inner .c_video a img {
+  padding-right: 15px;
+}
+
+
+/* End Challange Area css
+============================================================================================ */
 
 /* End Footer Area css
 ============================================================================================ */
