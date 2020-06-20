@@ -95,7 +95,7 @@
     .float-sm-left{
         h5{
             font-size: 14px;
-            color: #2a2f56;
+            color: #ffffff;
             font-family: $rob;
             text-transform: uppercase;
             font-weight: 500;
@@ -109,7 +109,7 @@
                 margin-right: 32px;
                 a{
                     font-size: 14px;
-                    color: #2a2f56;
+                    color: #ffffff;
                     @include transition;
                 }
                 &:last-child{

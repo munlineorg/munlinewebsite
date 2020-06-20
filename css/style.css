@@ -311,7 +311,7 @@ i:before {
   top: -70px;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(97, 97, 97, 0.6);
   -webkit-transform: translateY(70px);
   -ms-transform: translateY(70px);
   transform: translateY(70px);
@@ -2406,7 +2406,7 @@ i:before {
 
 .footer_copyright .float-sm-left h5 {
   font-size: 14px;
-  color: #2a2f56;
+  color: #85889b;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -2420,7 +2420,7 @@ i:before {
 
 .footer_copyright .float-sm-right ul li a {
   font-size: 14px;
-  color: #2a2f56;
+  color: #ffffff;
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
