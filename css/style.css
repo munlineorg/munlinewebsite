@@ -185,6 +185,7 @@ i:before {
 .main_menu_area .navbar {
   padding: 0px;
   border-radius: 0px;
+  border-radius: 0px;
   background-color: transparent !important;
 }
 
@@ -342,7 +343,7 @@ i:before {
 
 .banner_area:before {
   content: "";
-  background: url(../img/banner/banner-bg.png) no-repeat scroll center right;
+  background: url(../img/banner/banner-bg.png) no-repeat scroll top right;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -350,7 +351,6 @@ i:before {
   max-width: 1233px;
   width: 100%;
 }
-
 .banner_inner_text {
   padding-top: 200px;
   position: relative;
