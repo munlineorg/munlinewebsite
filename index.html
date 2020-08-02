@@ -2,6 +2,17 @@
 <html>
 
 <head>
+	<style>
+		#showonhover {
+			display: none;
+		}
+		#showonhover:hover {
+			display: inline-block;
+		}
+		#b1hover:hover + #showonhover{
+			display: inline-block;
+		}
+	</style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -116,7 +127,7 @@ Debates
           <!-- LAYER NR. 1 -->
           <div class="slider_text_box">
             <div class="tp-caption tp-resizeme first_text" data-x="['left','left','left','left','15','center']" data-hoffset="['0','80','80','0']" data-y="['top','top','top','top']" data-voffset="['400','400','400','250','180','180']" data-fontsize="['72','72','72','50','50','30']" data-lineheight="['82','82','82','62','62','42']" data-width="['none']" data-height="none" data-whitespace="nowrape" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="['left','left','left','left','left','center']">Quality MUN <br> Online, For Free, Forever</div>
-            <div class="tp-caption tp-resizeme secand_text" data-x="['left','left','left','left','15','center']" data-hoffset="['0','80','80','0']" data-y="['top','top','top','top']" data-voffset="['575','575','575','400','320','300']" data-fontsize="['24','24','24','18','16','16']" data-lineheight="['36','36','36','26','26','26']" data-width="['none','none','none','none','none']" data-height="none" data-whitespace="nowrape" data-type="text" data-responsive_offset="on" data-transform_idle="o:1;" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="['left','left','left','left','left','center']"> <a class="more_btn" href="ga.html">Join Now</a>
+            <div class="tp-caption tp-resizeme secand_text" data-x="['left','left','left','left','15','center']" data-hoffset="['0','80','80','0']" data-y="['top','top','top','top']" data-voffset="['575','575','575','400','320','300']" data-fontsize="['24','24','24','18','16','16']" data-lineheight="['36','36','36','26','26','26']" data-width="['none','none','none','none','none']" data-height="none" data-whitespace="nowrape" data-type="text" data-responsive_offset="on" data-transform_idle="o:1;" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="['left','left','left','left','left','center']"> <a class="more_btn" href="ga.html" id="b1hover">Join Now</a><a href="mailinglist.html" style="text-decoration: none; font-size: 75%; color: #b8e0ff;" id="showonhover">&nbsp; Join Our Mailing List</a>
             </div>
             <!-- DISCOVER BUTTON - NOT SURE IF WE REALLY WANT TO USE IT
                     <div class="tp-caption tp-resizeme"
@@ -242,10 +253,10 @@ Debates
   <!--================End We Truly Are Global... =================-->
   <!--================You deserve... =================-->
   <section class="team_people_area">
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-left: 0px;">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="team_people_text">
+        <div class="col-lg-6" style="padding-left: 0px;">
+          <div class="team_people_text" style="padding-left: 0px;  margin-left: 0px;">
             <div class="l_title">
               <img src="img/icon/title-icon.png" alt="">
               <h4>You deserve the opportunity to change the world</h4>
@@ -313,12 +324,12 @@ Debates
       </div>
     </div>
   </div>
-  <section class="get_in_touch_area" style="	transform-origin: center;">
+  
     <div class="sc-content">
       <div class="container">
         <div class="row get_touch_inner">
 			<div class="col-lg-6" >
-            <div class="touch_details" style="padding-top: 20%; margin-left: 0%;">
+            <div class="touch_details" style="padding-top: 10%; margin-left: 0%;">
               <div class="l_title">
                 <img src="img/icon/title-icon.png" alt="">
                 <h2>Questions? Ask us!</h2>
@@ -351,7 +362,7 @@ Debates
         </div>
       </div>
     </div>
-  </section>
+  
   <footer class="footr_area">
     <div class="footer_copyright">
       <div class="container">
@@ -368,9 +379,9 @@ Debates
           <ul>
 
           <ul>
-            <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <li><a href="https://www.facebook.com/MUNLineofficial"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/munlineofficial/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/munline/"><i class="fa fa-linkedin"></i></a></li>
               <li><a href="https://open.spotify.com/show/2oZUAFwObhRmIaVnu9wbub?si=JcvlPxHJRpyN2OEgxRdI_Q"><i class="fa fa-spotify"></i></a></li>
  </ul></ul>
         </div>
