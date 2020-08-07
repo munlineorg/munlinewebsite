@@ -2,27 +2,7 @@
 <html>
 
 <head>
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <script>
-    function sendEmail() {
-      sender = document.getElementById("email");
-      names = document.getElementById("name");
-      msg = document.getElementById("message");
-      subject = document.getElementById("subject");
-      Email.send({
-        SecureToken : "ea5398c6-562d-4e6c-94b8-1a494e0f9fbd\n",
-        To : 'admin@munline.org',
-        From : sender,
-        Subject : subject,
-        Body : msg + " from " + names
-      }).then(
-              message => alert(message)
-      );
-    }
-
-
-  </script>
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -139,11 +119,12 @@ Debates
   <!--================End Banner Area =================-->
   <!--================Get in Touch Area =================-->
   <section class="get_in_touch_area" style="	transform-origin: center;">
+   
     <div class="sc-content">
       <div class="container">
         <div class="row get_touch_inner">
 			<div class="col-lg-6" >
-            <div class="touch_details" style="padding-top: 20%; margin-left: 0%;">
+            <div class="touch_details" style="padding-top: 10%; margin-left: 0%;">
               <div class="l_title">
                 <img src="img/icon/title-icon.png" alt="">
                 <h2>Questions? Ask us!</h2>
@@ -176,6 +157,7 @@ Debates
         </div>
       </div>
     </div>
+  
   </section>
 	
   <!--================End Get in Touch Area =================-->
