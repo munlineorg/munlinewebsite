@@ -70,6 +70,8 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  background: url(../img/home-slider/slider-bg-1.png) no-repeat scroll top right;
+  background-size: 1900px 1000px;
 }
 
 body, p, h1, h2, h3, h4, h5, h6 {
@@ -193,7 +195,10 @@ i:before {
   border: none;
   border-radius: 0px;
   padding: 0px;
+  outline: none;
 }
+
+
 
 .main_menu_area .navbar .navbar-toggler span {
   height: 3px;
@@ -210,18 +215,26 @@ i:before {
 @media (min-width: 992px) {
   .main_menu_area .navbar .navbar-collapse {
     text-align: right;
-    display: block !important;
+    display:grid !important;
+  }
+
+  .navbar-nav > li:nth-child(4) > ul.dropdown-menu{
+    min-width: 350px !important;
   }
 }
 
 .main_menu_area .navbar .navbar-nav {
-  display: inline-block;
+  display: grid;
   text-align: right;
+  grid-template-columns: minmax(120px,130px) minmax(120px,130px) minmax(120px,160px) minmax(120px,160px) minmax(120px,160px) minmax(130px,160px);
+
+  justify-self: end;
+  justify-items: center;
 }
 
 .main_menu_area .navbar .navbar-nav li {
   display: inline-block;
-  margin-right: 55px;
+  /* margin-right: 55px; */
 }
 
 .main_menu_area .navbar .navbar-nav li a {
@@ -343,7 +356,9 @@ i:before {
 
 .banner_area:before {
   content: "";
-  background: url(../img/banner/banner-bg.png) no-repeat scroll top right;
+  /* background: url(../img/home-slider/slider-bg-1.png) no-repeat scroll top right; */
+  /* background-size: contain; */
+  /* background: url(../img/banner/banner-bg.png) no-repeat scroll top right; */
   position: absolute;
   right: 0px;
   top: 0px;
@@ -460,6 +475,8 @@ i:before {
   border-right: 0px;
 }
 
+
+
 /* End Slider css
 ============================================================================================ */
 /* Testimonials Slider css
@@ -564,6 +581,12 @@ i:before {
 /*----------------------------------------------------*/
 /* Feature Area css
 ============================================================================================ */
+
+.rfiFIX{
+  display: grid;; grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+
 .feature_area {
   padding-top: 70px;
 }
@@ -574,7 +597,10 @@ i:before {
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
+  height: 330px;
 }
+
+
 
 .feature_item .f_icon {
   min-height: 91px;
@@ -593,9 +619,10 @@ i:before {
 .feature_item h4 {
   color: #0b1033;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
   padding: 45px 0px 20px 0px;
+  margin: 0px 10px 0px 10px;
 }
 
 .feature_item p {
