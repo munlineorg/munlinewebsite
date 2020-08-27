@@ -214,7 +214,7 @@
     .rfiFIX > div > div.feature_item{
         display: grid;
         grid-template-columns: 1fr 3fr;
-        height: 110px;
+        height: max-content;
         padding: 10px 0px 10px 0px;
     }
 
