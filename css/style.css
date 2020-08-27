@@ -2511,3 +2511,65 @@ i:before {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*row fixing*/
+
+.nav-link{
+  padding-bottom: 3%;
+}
+
+@media(max-width:991px){
+  .rowspecial{
+    margin: 0 50px 0 50px !important;
+    grid-template-columns: 1fr !important;
+    display: grid;
+    width: 100% !important;
+  }
+  
+  .container-fluid{
+    padding-right: 0px !important;
+    padding-left:0px !important;
+  }
+
+  .rowspecialImg{
+    justify-self: center !important;
+    margin-top: 10% !important;
+  }
+
+  .rowspecial div{
+    justify-self: center !important;
+  }
+  
+  
+  .tpt{
+    width: 100% !important;
+    max-width: initial !important;
+  }
+
+
+  .mc-field-group input{
+    width: 100% !important;
+  }
+
+}
+
+.rowspecial div{
+  justify-self: center;
+  width: 80% !important;
+  max-width: 570px;
+}
+
+.rowspecial{
+  display: grid;
+  margin: 0 5% 0 5%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team_img_inner{
+  margin-left: 0px;
+}
+
+.rowspecialImg{
+  justify-self: flex-start;
+}
