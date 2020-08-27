@@ -19,6 +19,6 @@
 		$testresult2 = $test['b'];
 		$testresult3 = $test['c'];
 
-		echo "$testresult1 <br> $testresult2 <br> $testresult3";
+		echo "$testresult1";
 
 ?>
