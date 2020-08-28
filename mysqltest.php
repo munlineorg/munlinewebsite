@@ -1,8 +1,8 @@
 <?php
-		$DATABASE_HOST = 'munline-01.cm1jbmjcns14.us-east-2.rds.amazonaws.com';
-		$DATABASE_USER = 'admin';
-		$DATABASE_PASS = 'm1u2n3l4i5n6e7-data!?';
-		$DATABASE_NAME = 'munline01';
+		$DATABASE_HOST = 'den1.msyql2.gear.host';
+		$DATABASE_USER = 'munlinetest';
+		$DATABASE_PASS = 'kyr17pan2004lov27fle2016!';
+		$DATABASE_NAME = 'munlinetest';
 		// Try and connect using the info above.
 		$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 		if ( mysqli_connect_errno() ) {
