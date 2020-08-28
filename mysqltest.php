@@ -1,24 +1,29 @@
 <?php
-		$DATABASE_HOST = 'den1.msyql2.gear.host';
-		$DATABASE_USER = 'munlinetest';
-		$DATABASE_PASS = 'kyr17pan2004lov27fle2016!';
-		$DATABASE_NAME = 'munlinetest';
-		// Try and connect using the info above.
-		$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-		if ( mysqli_connect_errno() ) {
-		// If there is an error with the connection, stop the script and display the error.
-		exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+		
+# Fill our vars and run on cli
+# $ php -f db-connect-test.php
+
+$dbname = 'munlinetest';
+$dbuser = 'munlinetest';
+$dbpass = 'kyr17pan2004lov27fle2016!';
+$dbhost = 'den1.mysql2.gear.host';
+
+$connect = mysql_connect($dbhost, $dbuser, $dbpass) or die("Unable to Connect to '$dbhost'");
+mysql_select_db($dbname) or die("Could not open the db '$dbname'");
+
+$test_query = "SHOW TABLES FROM $dbname";
+$result = mysql_query($test_query);
+
+$tblCnt = 0;
+while($tbl = mysql_fetch_array($result)) {
+  $tblCnt++;
+  #echo $tbl[0]."<br />\n";
 }
 
-		$testsql = "SELECT * FROM test WHERE a='test';";
-		$testq = $con->query($testsql);
-		$testq->setFetchMode(PDO::FETCH_ASSOC);
-		$test = $testq->fetch();
-
-		$testresult1 = $test['a'];
-		$testresult2 = $test['b'];
-		$testresult3 = $test['c'];
-
-		echo "$testresult1";
+if (!$tblCnt) {
+  echo "There are no tables<br />\n";
+} else {
+  echo "There are $tblCnt tables<br />\n";
+}
 
 ?>
