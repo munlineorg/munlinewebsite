@@ -2573,3 +2573,15 @@ i:before {
 .rowspecialImg{
   justify-self: flex-start;
 }
+
+/* forms fix */
+
+.debateForms{
+  width:600px;
+}
+
+@media(max-width:610px){
+  .debateForms{
+    width:90%;
+  }
+}
