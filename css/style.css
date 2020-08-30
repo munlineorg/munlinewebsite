@@ -2578,10 +2578,17 @@ i:before {
 
 .debateForms{
   width:600px;
+  height: 3500px;
 }
 
 @media(max-width:610px){
   .debateForms{
     width:90%;
   }
+}
+
+@media(max-width: 475px){
+  .debateForms{
+    height:4800px;
+  } 
 }
